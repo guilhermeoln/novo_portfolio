@@ -43,8 +43,8 @@ nav a{
 
 .home{
     display: flex;
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -54,7 +54,9 @@ nav a{
 }
 
 .home h2{
-    font-size: 80px;
+    font-size: 50px;
+    margin-right: 5%;
+    width: 100vw;
 }
 
 .home h3{
@@ -65,6 +67,7 @@ nav a{
 .sobre{
     display: flex;
     height: 600px;
+    width: 100vw;
     background-color: #1b2027;
     box-shadow: 0 10px 15px #0f1b2c;
 }
@@ -142,6 +145,7 @@ span{
 .container-projetos{
     display: flex;
     height: 80vh;
+    width: 100vw;
     background-color: #F2CE1B;
 }
 
@@ -226,12 +230,6 @@ span{
 .container-contato i{
     margin-right: 5px;
 }
-
-.wpp{
-    background-color: #729B79;
-    height: 30px;
-}
-
 
 
 

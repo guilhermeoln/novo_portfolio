@@ -35,12 +35,18 @@
     }
 
     .icones-sobre{
-        margin-top: 20px;
+        margin-top: 40px;
     }
 
     .container-contato{
         height: 30%;
-        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .container-contato a{
+        margin: 2px;
     }
 
 }
