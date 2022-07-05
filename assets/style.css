@@ -1,0 +1,274 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    color: #F2CE1B;
+    font-weight: bold;
+}
+
+body, html{
+    height: 100%;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    height: 4rem;
+    width: 100%;
+    align-items: center;
+    background-color: #1b2027;
+    overflow: hidden;
+    position: fixed;
+    box-shadow: 0 10px 15px #07080a;
+}
+
+header h1{
+    margin-left: 20px;
+}
+
+
+nav{
+    display: flex;
+    margin-right: 20px;
+    width: 50%;
+    justify-content: flex-end;
+    font-weight: bold;
+}
+
+nav a{
+    margin: 10px;
+}
+
+.home{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.8)),url(../assets/img/fundo-home.jpg) no-repeat;
+    background-size: cover;
+    box-shadow: 0 10px 15px #0f1b2c;
+}
+
+.home h2{
+    font-size: 80px;
+}
+
+.home h3{
+    font-size: 30px;
+    color: #BCB8B1;
+}
+
+.sobre{
+    display: flex;
+    height: 600px;
+    background-color: #1b2027;
+    box-shadow: 0 10px 15px #0f1b2c;
+}
+
+.img{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.img img{
+    width: 400px;
+    height: 400px;
+    border: 2px solid #2D3540;
+    border-radius: 50%;
+}
+
+.container-sobre{
+    display: flex;
+    width: 50%;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.titulo-sobre{
+    display: flex;
+    justify-content: center;
+}
+
+.container-sobre h3{
+    font-size: 40px;
+    margin-top: 25px;
+}
+
+.text-sobre{
+    display: flex;
+    height: 15rem;
+    margin-top: 50px;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.text-sobre p{
+    color: #BCB8B1;
+}
+
+.icones-sobre{
+    display: flex;
+    font-size: 40px;
+}
+
+.icones-sobre i{
+    margin: 10px;
+}
+
+span{
+    color: #F2CE1B;
+}
+
+.projetos{
+    display: flex;
+    height: 100px;
+    background-color: #F2CE1B;
+    justify-content: center;
+}
+
+.projetos h2{
+    color: #1b2027;
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.container-projetos{
+    display: flex;
+    height: 80vh;
+    background-color: #F2CE1B;
+}
+
+.button-card{
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+.button-card a{
+    background-color: #F2CE1B;
+    color: #1b2027;
+    font-weight: bold;
+    padding: 2px;
+    border-radius: 30px;
+}
+
+.button-card a:hover{
+    transform: translateY(-5px);
+    transition: 0.3s all;
+    cursor: pointer
+}
+
+.button-card i{
+    color: #1b2027;
+    padding: 2px;
+}
+
+.container-projetos h2{
+    color: #F2CE1B;
+}
+
+
+/* CARDS */
+
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.card{
+    border-radius: 5px;
+    box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
+    padding: 30px;
+    margin: 20px;
+    width: 400px;
+    transition: all 0.3s ease-out;
+    background-color: #1b2027;
+}
+
+.card p{
+    color: #a3a5ae;
+    font-size: 16px;
+}
+
+
+.contato{
+    display: flex;
+    background-color: #1b2027;
+    height: 80px;
+    justify-content: center;
+}
+
+.contato h3{
+    font-size: 40px;
+}
+
+.container-contato{
+    display: flex;
+    height: 10%;
+    background-color: #1b2027;
+    justify-content: center;
+}
+
+.container-contato a{
+    margin: 30px;
+}
+
+.container-contato i{
+    margin-right: 5px;
+}
+
+.wpp{
+    background-color: #729B79;
+    height: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Animação */
+
+[data-anime]{
+    opacity: 0;
+    transition: 1s;
+}
+
+[data-anime="down"]{
+    transform: translate3d(0,-100%,0);
+}
+
+[data-anime="up"]{
+    transform: translate3d(0,100%,0);
+}
+
+[data-anime="left"]{
+    transform: translate3d(-100%,0,0);
+}
+
+[data-anime="right"]{
+    transform: translate3d(50px,0,0);
+}
+
+[data-anime].animate{
+    opacity: 1;
+    transform: translate3d(0,0,0);
+}
+
